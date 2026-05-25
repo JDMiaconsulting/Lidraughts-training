@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lidraughts Training Minimal</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Entraînement Jeu de Dames 10x10</h1>
+    <div class="tabs">
+      <button class="tab active" data-tab="analyze">ANALYSER UNE POSITION</button>
+      <button class="tab" data-tab="play">JOUER CONTRE L'ORDINATEUR</button>
+    </div>
+
+    <section id="tab-analyze" class="tab-panel active">
+      <div id="board-editor"></div>
+      <div class="controls">
+        <label>Trait:
+          <select id="sideToMove"><option value="white">Blanc</option><option value="black">Noir</option></select>
+        </label>
+        <label>Variantes max:
+          <input id="maxVariants" type="number" min="1" max="10" value="10" />
+        </label>
+        <button id="analyzeBtn">Analyser</button>
+      </div>
+      <div id="analysis-results"></div>
+    </section>
+
+    <section id="tab-play" class="tab-panel">
+      <div class="controls">
+        <label>Couleur joueur:
+          <select id="playerColor"><option value="white">Blanc</option><option value="black">Noir</option></select>
+        </label>
+        <label>Niveau:
+          <input id="level" type="number" min="1" max="8" value="3" />
+        </label>
+        <button id="startGameBtn">Nouvelle partie</button>
+      </div>
+      <div id="play-area"></div>
+    </section>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
