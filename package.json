@@ -1,55 +1,15 @@
 {
-  "name": "lidraughts",
-  "version": "1.0.0",
-  "description": "lidraughts.org: the forever free, adless and open source draughts server",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/roepstoep/lidraughts.git"
-  },
-  "keywords": [
-    "draughts",
-    "lidraughts"
-  ],
-  "author": "Stefan Schermann (modified original by Thibault Duplessis)",
-  "license": "AGPL-3.0",
-  "bugs": {
-    "url": "https://github.com/roepstoep/lidraughts/issues"
-  },
-  "homepage": "https://lidraughts.org",
-  "engines": {
-    "node": ">=10"
+  "name": "lidraughts-training-minimal",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Minimal 10x10 draughts training app with only Analyze Position and Play vs AI",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js"
   },
   "dependencies": {
-    "fs-extra": "^4.0.2",
-    "xml2js": "^0.4.19"
-  },
-  "private": true,
-  "workspaces": [
-    "ui",
-    "ui/analyse",
-    "ui/ceval",
-    "ui/chat",
-    "ui/challenge",
-    "ui/cli",
-    "ui/common",
-    "ui/dasher",
-    "ui/draughts",
-    "ui/draughtsground",
-    "ui/editor",
-    "ui/game",
-    "ui/nvui",
-    "ui/speech",
-    "ui/palantir",
-    "ui/lobby",
-    "ui/notify",
-    "ui/puzzle",
-    "ui/round",
-    "ui/simul",
-    "ui/site",
-    "ui/tournament",
-    "ui/tournamentCalendar",
-    "ui/tournamentSchedule",
-    "ui/tree",
-    "ui/@types/lidraughts"
-  ]
+    "express": "^4.19.2",
+    "uuid": "^11.0.3"
+  }
 }
