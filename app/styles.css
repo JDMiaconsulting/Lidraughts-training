@@ -1,0 +1,18 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; }
+.container { max-width: 980px; margin: 2rem auto; background: white; padding: 1rem 1.5rem; border-radius: 10px; }
+.tabs { display: flex; gap: .5rem; margin-bottom: 1rem; }
+.tab { padding: .7rem 1rem; border: 1px solid #ccc; background: #eee; cursor: pointer; }
+.tab.active { background: #1f6feb; color: #fff; border-color: #1f6feb; }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+.controls { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin: 1rem 0; }
+.card { border: 1px solid #ddd; border-radius: 8px; padding: .6rem .8rem; margin-bottom: .5rem; background: #fafafa; }
+.board { display: grid; grid-template-rows: repeat(10, 36px); gap: 1px; width: max-content; border: 1px solid #bbb; }
+.row { display: grid; grid-template-columns: repeat(10, 36px); gap: 1px; }
+.cell { border: 0; width: 36px; height: 36px; font-weight: bold; cursor: pointer; }
+.cell.dark { background: #9b6a3b; color: #fff; }
+.cell.light { background: #f1d4a6; color: #222; }
+.hint { margin: .2rem 0 .6rem 0; color: #555; }
+.editor-actions { margin-top: .6rem; display: flex; gap: .6rem; }
+.error { color: #b00020; font-weight: 600; }
+.success { color: #0b7a34; font-weight: 600; }
